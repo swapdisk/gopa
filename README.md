@@ -12,12 +12,12 @@ The original Preupgrade Assistant was designed as a prerequisite for completing 
 
 ## Building a Gopa package
 
-- Create the primary packaging source by entering: `python setup.py sdist --formats=gztar`. Note: The other packaging sources are in the `packaging/sources/` folder.
+- Create the primary packaging source by entering: `python2 setup.py sdist --formats=gztar`. Note: The other packaging sources are in the `packaging/sources/` folder.
 - Build an RPM package by using a specfile in the `packaging/` folder:
   ```
   rpmbuild -bs packaging/gopa.spec \
     --define "__python /usr/bin/python2" \
-    --define "_sourcedir $(pwd)/packaging/sources"
+    --define "_sourcedir dist"
    ```
 
 ## Executing the Gopa preupgrade
