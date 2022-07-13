@@ -1,0 +1,23 @@
+.\" Copyright Petr Hracek, 2016
+.\"
+.\" This page is distributed under GPL.
+.\"
+.TH preupg-content-creator 1 2016-09-01 "" "Linux User's Manual"
+.SH NAME
+preupg-content-creator \- An interactive way of creating a Preupgrade Assistant module
+
+.SH HOW TO TEST A MODULE
+
+Follow these steps to test the created module on the system:
+
+1. Execute the preupg-xccdf-compose command which creates an XML file needed for running the Preupgrade Assistant
+
+preupg-xccdf-compose <module_set_directory>
+
+2. Execute the preupg binary as root:
+
+preupg -c <module_set_directory>-results/all-xccdf.xml
+
+
+.SH AUTHORS
+Petr Hracek, <phracek@redhat.com> (man page)

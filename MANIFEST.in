@@ -1,0 +1,20 @@
+include common.sh
+include LICENSE
+include MANIFEST.in
+
+include           bin/*
+recursive-include data *
+recursive-include doc *
+recursive-include etc *
+include           man/*
+recursive-include packaging *
+include           preupg/*.py
+include           preupg/creator/*
+recursive-include preupg/kickstart *
+include           preupg/ui/licenses/*
+include           preupg/ui/report/fixtures/initial_data.json
+recursive-include preupg/ui/static *
+recursive-include preupg/ui/templates *
+include           preupg/xmlgen/*
+recursive-include tests *
+include           tools/*
