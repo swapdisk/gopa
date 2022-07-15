@@ -19,6 +19,7 @@ Release:        2%{?dist}
 Summary:        Gopa advises on feasibility of system upgrade or migration
 Group:          System Environment/Libraries
 License:        GPLv3+
+URL:            https://github.com/swapdisk/gopa
 
 Source0:        %{name}-%{version}.tar.gz
 %if %{build_ui}
