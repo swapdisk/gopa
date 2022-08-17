@@ -8,7 +8,7 @@ PA and RUT are replaced with [Leapp](https://leapp.readthedocs.io/en/latest/) fo
 
 The framework is designed to run PA modules, which analyze the system for possible in-place upgrade limitations. It is based on a modular system, with each module performing a separate test, checking for package removals, incompatible obsolete packages, changes in libraries, users, groups, services, or incompatibilities of command-line options or configuration files. It is able to execute post-upgrade scripts to finalize complex tasks after the system upgrade. It then produces a report, which assists you in performing the upgrade itself by outlining potential problem areas and by offering suggestions about mitigating any possible incompatibilities. 
 
-The original Preupgrade Assistant was designed as a prerequisite for completing a successful in-place RHEL upgrade. For upgrades to RHEL7, RUT automatically invoked the pre- and post-upgrade scripts staged by the modules. For upgrades to RHEL8 and later which use Leapp in lieu of RUT, these scripts will be run from [Zebra](https://github.com/swapdisk/zebra) Ansible playbook tasks.
+The original Preupgrade Assistant was designed as a prerequisite for completing a successful in-place RHEL upgrade. For upgrades to RHEL7, RUT automatically invoked the pre- and post-upgrade scripts staged by the modules. For upgrades to RHEL8 and later which use Leapp in lieu of RUT, these scripts will be run from [these](https://github.com/swapdisk/gopa-playbooks) Ansible playbooks.
 
 ## Building a Gopa package
 
